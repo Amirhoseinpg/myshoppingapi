@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/signin.css">
+    <link rel="stylesheet" href="/css/bootstrap-rtl.css" />
+    <link rel="stylesheet" href="/css/font-awesome.css" />
+    <title><%= pageTitle %></title>
+</head>
+<body class="rtl">
+    <form class="form-signin" action="/api/products" method="PUT">
+        <h1 class="h3 mb-3 font-weight-normal">به روزرسانی محصول</h1>
+        <label for="inputid" class="sr-only">آیدی محصول</label>
+        <input
+            id="inputid"
+            type="text"
+            name="title"
+            class="form-control mb-2"
+            placeholder="آیدی محصول"
+            autofocus
+            required
+        />
+        <label for="inputFullname" class="sr-only">نام محصول</label>
+        <input
+            id="inputFullname"
+            type="text"
+            name="title"
+            class="form-control mb-2"
+            placeholder="نام محصول"
+            autofocus
+        />
+        <label for="inputimage" class="sr-only">آدرس عکس</label>
+        <input
+            type="text"
+            name="image"
+            id="inputimage"
+            class="form-control mb-2"
+            placeholder="آدرس عکس"
+        />
+        <label for="inputdescription" class="sr-only">توضیحات</label>
+        <input
+            type="text"
+            name="description"
+            id="inputdescription"
+            class="form-control mb-2"
+            placeholder="توضیحات"
+        />
+        <label for="inputprice" class="sr-only">قیمت محصول</label>
+        <input
+            type="number"
+            name="price"
+            id="inputprice"
+            class="form-control"
+            placeholder="قیمت محصول"
+        />
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">
+            به روز رسانی محصول
+        </button>
+    </form>
+
+    <script src="/js/jquery.slim.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+    <script src="/js/update.js"></script>
+</body>
+</html>

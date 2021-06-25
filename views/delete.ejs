@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/signin.css">
+    <link rel="stylesheet" href="/css/bootstrap-rtl.css" />
+    <link rel="stylesheet" href="/css/font-awesome.css" />
+    <title><%= pageTitle %></title>
+</head>
+<body class="rtl">
+    <form class="form-signin" action="/api/products" method="DELETE">
+        <h1 class="h3 mb-3 font-weight-normal">حذف محصول</h1>
+        <label for="inputdelete" class="sr-only">آیدی محصول</label>
+        <input
+            id="inputdelete"
+            type="text"
+            name="delete"
+            class="form-control mb-2"
+            placeholder="آیدی محصول"
+            autofocus
+            required
+        />
+       
+        <button class="btn btn-lg btn-primary btn-block" type="submit">
+            حذف محصول
+        </button>
+    </form>
+    <script src="/js/jquery.slim.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/delete.js"></script>
+
+</body>
+</html>

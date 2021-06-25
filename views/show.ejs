@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/show.css">
+    <link rel="stylesheet" href="/css/bootstrap-rtl.css" />
+    <link rel="stylesheet" href="/css/font-awesome.css" />
+    <title><%= pageTitle%></title>
+</head>
+<body class="rtl" style="background-color: gray;">
+    <a href="/" class="btn btn-lg btn-primary bt">HOME PAGE</a>
+    <div id="output" class="list">
+    </div>
+
+    <form class="form-signin mr-5" action="/api/products" method="GET">
+        <h1 class="h3 mb-3 font-weight-normal">مشاهده محصول</h1>
+        <label for="#inputid" class="sr-only">آیدی محصول</label>
+        <input
+            id="#inputid"
+            type="text"
+            name="show"
+            class="form-control mb-2"
+            placeholder="آیدی محصول"
+            autofocus
+            required
+        />
+       
+        <button  class="btn btn-lg btn-primary btn-block" type="submit">
+           مشاهده محصول
+        </button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>  
+    <script src="/js/show.js"></script> 
+</body>
+</html>
